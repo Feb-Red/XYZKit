@@ -46,9 +46,9 @@ public extension UIView {
     }
 
     @discardableResult
-    func clipsCornerRadius(_ radius: Float) -> Self {
+    func clipsCornerRadius(_ radius: CGFloat) -> Self {
         self.clipsToBounds = true
-        self.layer.cornerRadius = CGFloat(radius)
+        self.layer.cornerRadius = radius
         return self
     }
 }
